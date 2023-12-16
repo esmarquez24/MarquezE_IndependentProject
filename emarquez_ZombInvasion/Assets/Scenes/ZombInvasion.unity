@@ -7468,13 +7468,13 @@ Transform:
   - {fileID: 824377270}
   - {fileID: 749206882}
   - {fileID: 795651595}
-  - {fileID: 547553605}
   - {fileID: 271534647}
-  - {fileID: 1819647363}
+  - {fileID: 547553605}
   - {fileID: 1729656532}
   - {fileID: 956069157}
   - {fileID: 1262447229}
   - {fileID: 168031409}
+  - {fileID: 1819647363}
   - {fileID: 324630367}
   - {fileID: 587026438}
   - {fileID: 36526897}
@@ -19194,6 +19194,10 @@ MonoBehaviour:
   - {fileID: 265820658}
   - {fileID: 640026177}
   - {fileID: 1035011750}
+  alwaysDrawPath: 0
+  drawAsLoop: 1
+  drawNumbers: 0
+  debugColour: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &1324863262
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22733,14 +22737,14 @@ Transform:
   - {fileID: 269809509}
   - {fileID: 212536304}
   - {fileID: 1058129576}
+  - {fileID: 187443009}
+  - {fileID: 2089593344}
   - {fileID: 285412213}
   - {fileID: 283381032}
   - {fileID: 906308309}
   - {fileID: 625214812}
   - {fileID: 1366342838}
   - {fileID: 522697956}
-  - {fileID: 187443009}
-  - {fileID: 2089593344}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
