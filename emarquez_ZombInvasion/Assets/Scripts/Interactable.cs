@@ -1,15 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    // message displayed to player when looking at an interactable
+    // Add or remove an InteractionEvent component to this gameObject
+    public bool useEvents;
+    [SerializeField]
     public string promptMessage;
 
-    // this function will be called from our player
+    public virtual string OnLook()
+    {
+        return promptMessage;
+    }
+    
     public void BaseInteract()
     {
+        if (useEvents)
+        {
+            GetComponent<InteractionEvent>().OnInteract.Invoke();
+        }
         Interact();
     }
     protected virtual void Interact()
