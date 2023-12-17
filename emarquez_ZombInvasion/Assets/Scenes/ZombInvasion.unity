@@ -927,8 +927,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 1431471479}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!114 &56703755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3601,8 +3604,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 1976134702}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!195 &220421448
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4297,7 +4303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 127.79358, y: 656.48773}
+  m_AnchoredPosition: {x: 127.79358, y: 497.4967}
   m_SizeDelta: {x: 792.6525, y: 400.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250637840
@@ -4928,7 +4934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 148.19861, y: 652.1}
+  m_AnchoredPosition: {x: 148.19861, y: 493.10895}
   m_SizeDelta: {x: 545.3645, y: 55.1285}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &285203381
@@ -6126,8 +6132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 1321608415}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!195 &341990981
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -10697,8 +10706,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 1498185384}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!114 &587868116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12080,7 +12092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 148.42853, y: 650.991}
+  m_AnchoredPosition: {x: 148.42853, y: 492}
   m_SizeDelta: {x: 546.8694, y: 58.7988}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &687797627
@@ -15213,8 +15225,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 1087127734}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!195 &901692041
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -20694,7 +20709,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 147.6, y: 646.1877}
+  m_AnchoredPosition: {x: 147.6, y: 487.19666}
   m_SizeDelta: {x: 640.465, y: 360.8076}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1366870659
@@ -28500,8 +28515,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 548816704}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!114 &2014435617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29445,8 +29463,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3befcde2a5839a5488ab7ea31e6d4554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentState: 
   path: {fileID: 2116087769}
+  sightDistance: 20
+  fieldOfView: 85
+  eyeHeight: 1.8
+  currentState: 
 --- !u!195 &2102262992
 NavMeshAgent:
   m_ObjectHideFlags: 0
