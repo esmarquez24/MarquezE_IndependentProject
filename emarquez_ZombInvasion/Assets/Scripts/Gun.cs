@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +13,15 @@ public class Gun : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            var bullet = Instantiate(bulletPrefab, gunBarrel.position, gunBarrel.rotation);
-            bullet.GetComponent<Rigidbody>().velocity = gunBarrel.forward * bulletSpeed;
+            FireWeapon();
         }
+    }
+
+    private void FireWeapon()
+    {
+        // Instantiate the bullet
+        GameObject bullet = Instantiate(bulletPrefab, gunBarrel.position, Quaternion.identity);
+        // shoot the bullet
+        bullet.GetComponent<Rigidbody>().AddForce(gunBarrel.forward.normalized * bulletSpeed, ForceMode.Impulse);
     }
 }
