@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class PlayerRespawn : MonoBehaviour
+/*public class PlayerRespawn : MonoBehaviour
 {
 	//A reference to the game manager
 	public GameManager gameManager; 
@@ -13,3 +13,4 @@ public class PlayerRespawn : MonoBehaviour
 		gameManager.PositionPlayer();
 	}
 }
+*/
