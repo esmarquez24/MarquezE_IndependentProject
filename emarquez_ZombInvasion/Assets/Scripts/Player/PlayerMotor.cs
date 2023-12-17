@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMotor : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class PlayerMotor : MonoBehaviour
     public float speed = 5f;
     public float gravity = -9.8f;
     public float jumpHeight = 3f;
+    // public bool shoot;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,4 +46,8 @@ public class PlayerMotor : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -3.0f * gravity);
         }
     }
+    /* public void OnShoot(InputValue value)
+    {
+        shoot = value.isPressed;
+    } */
 }
