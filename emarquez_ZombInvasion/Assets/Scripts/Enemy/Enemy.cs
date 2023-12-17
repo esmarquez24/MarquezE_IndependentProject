@@ -16,6 +16,10 @@ public class Enemy : MonoBehaviour
     public float sightDistance = 20f;
     public float fieldOfView = 85f;
     public float eyeHeight;
+    [Header("Attack Values")]
+    public Transform poisonSpawn;
+    [Range(0.1f, 10)]
+    public float fireRate;
     // just for debugging purposes 
     [SerializeField]
     private string currentState;

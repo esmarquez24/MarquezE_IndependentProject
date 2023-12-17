@@ -6,6 +6,7 @@ public class AttackState : BaseState
 {
     private float moveTimer;
     private float losePlayerTimer;
+    private float shotTimer;
     public override void Enter()
     {
 
@@ -18,18 +19,26 @@ public class AttackState : BaseState
 
     public override void Perform()
     {
-        if (enemy.CanSeePlayer())
+        if (enemy.CanSeePlayer()) // enemy can be seen
         {
+            // lock the lose player timer and increment the move and shot timers
             losePlayerTimer = 0;
             moveTimer += Time.deltaTime;
+            shotTimer += Time.deltaTime;
             enemy.transform.LookAt(enemy.Player.transform);
+            // if shot timer > fireRate
+            if (shotTimer > enemy.fireRate)
+            {
+                Shoot();
+            }
+            // move the enemy to a random position after a random time
             if (moveTimer > Random.Range(3, 7))
             {
                 enemy.Agent.SetDestination(enemy.transform.position + (Random.insideUnitSphere * 5));
                 moveTimer = 0;
             }
         }
-        else
+        else // lost sight of player
         {
             losePlayerTimer += Time.deltaTime;
             if (losePlayerTimer > 8)
@@ -38,6 +47,11 @@ public class AttackState : BaseState
                 stateMachine.ChangeState(new PatrolState());
             }
         }
+    }
+    public void Shoot()
+    {
+        Debug.Log("Shoot");
+        shotTimer = 0;
     }
 
     // Start is called before the first frame update
