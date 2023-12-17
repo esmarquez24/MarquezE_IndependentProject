@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 		fpsController = player.GetComponent<FirstPersonController> ();
 	
 		// Disables controls at the start.
-		fpsController.enabled = false;
+		//fpsController.enabled = false;
 	}
 
 
@@ -38,8 +38,8 @@ public class GameManager : MonoBehaviour
 		isFinished = false;
 
 		// Move the player to the spawn point, and allow it to move.
-		PositionPlayer();
-		fpsController.enabled = true;
+		//PositionPlayer();
+		//fpsController.enabled = true;
 	}
 
 

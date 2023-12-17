@@ -8,7 +8,7 @@ public class PlayerHealth : MonoBehaviour
     private float health;
     private float lerpTimer;
     [Header("Health Bar")]
-    public float maxHealth = 100f;
+    public float maxHealth = 150f;
     public float chipSpeed = 2f;
     public Image frontHealthBar;
     public Image backHealthBar;
