@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
 	private bool isFinished = false;
 
 	// So that we can access the player's controller from this script
-	private FirstPersonController fpsController;
+	//private FirstPersonController fpsController;
 
 
 	// Use this for initialization
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
 		Physics.autoSyncTransforms = true;
 
 		// Finds the First Person Controller script on the Player
-		fpsController = player.GetComponent<FirstPersonController> ();
+		//fpsController = player.GetComponent<FirstPersonController> ();
 	
 		// Disables controls at the start.
 		//fpsController.enabled = false;
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 	{
 		isRunning = false;
 		isFinished = true;
-		fpsController.enabled = false;
+		//fpsController.enabled = false;
 	}
 	
 	
