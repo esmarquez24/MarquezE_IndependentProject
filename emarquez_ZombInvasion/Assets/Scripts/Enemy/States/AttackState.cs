@@ -50,6 +50,14 @@ public class AttackState : BaseState
     }
     public void Shoot()
     {
+        // store reference to poisonSpawn
+        Transform poisonspawn = enemy.poisonSpawn;
+        // instantiate new poison orb
+        GameObject poison = GameObject.Instantiate(Resources.Load("Prefabs/Poison") as GameObject, poisonspawn.position, enemy.transform.rotation);
+        // calculate the direction to the player
+        Vector3 shootDirection = (enemy.Player.transform.position - poisonspawn.transform.position).normalized;
+        // add force to the rigidbody of poison
+        poison.GetComponent<Rigidbody>().velocity = Quaternion.AngleAxis(Random.Range(-3f,3f),Vector3.up) * shootDirection * 40;
         Debug.Log("Shoot");
         shotTimer = 0;
     }
